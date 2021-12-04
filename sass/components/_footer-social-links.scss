@@ -1,0 +1,54 @@
+/* Footer Social Links */
+
+.social-container{
+
+  @media screen and(max-width:767px){
+    margin: 60px 0;
+  }
+
+
+  @media screen and(min-width:768px) and(max-width:1199px){
+    margin-left: 165px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+
+  @media screen and(min-width:1200px){
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+  
+}
+
+.social-container__title{
+  color: $white-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social--width{
+  width: 206px;
+
+  @media screen and(max-width:767px){
+    margin: 0 auto;
+  }
+  
+}
+
+.social__link--changes-color{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icon--changes-fill{  
+  fill: $icon-color-footer; 
+}
+
+.social__link:hover,
+.social__link:focus{
+  background-color: $icon-background-hover;
+}
+

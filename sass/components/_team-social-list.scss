@@ -1,0 +1,82 @@
+/* Social -links */
+
+// .social{
+//   @include centered($content: space-between);
+// }
+
+// .social__link{
+//   @include centered();
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+//   background-color: $white-color;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+//     &:hover,
+//     &:focus  {
+//       background-color: $icon-background-hover;   
+//     }
+// }
+
+// .social__icon{  
+//   fill: $icon-color; 
+//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+//     .social__link:hover  &,
+//     .social__link:focus  &{                      
+//       fill: $icon-color-hover;    
+//     }
+// }
+
+
+
+
+.social{
+  @include centered();
+  background-color: transparent;
+  
+}
+
+.social__item{
+  margin-right: 10px;
+  
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.social__link{
+  @include centered();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $white-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus  {
+      background-color: $icon-background-hover;   
+    }
+}
+
+.social__icon{  
+  fill: $icon-color; 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .social__link:hover  &,
+    .social__link:focus  &{                      
+      fill: $icon-color-hover;    
+    }
+}
+
+
+
+
+
+
+
