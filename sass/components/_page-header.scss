@@ -4,15 +4,69 @@
 
 .header{
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .pege-header{
   border-bottom: 1px solid #ECECEC;
+  
 }
 
 
 
+
+
+
+
+
+.menu-button{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+
+  @media screen and(min-width:768px){
+    display: none;
+
+  }
+}
+
+
+.menu-button .menu-button__icon-cross{
+display: none;
+}
+
+.menu-button.is-open .menu-button__icon-cross{
+display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu{
+display: none;
+}
+
+
+
+.menu-container{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(150, 146, 146);
+    
+
+  @media screen and(max-width:767px){
+    &.is-open{
+      display: block;
+
+    }
+ }
+}
 
 
 
