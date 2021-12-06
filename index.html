@@ -19,6 +19,13 @@
             Web<span class="logo__color logo__color--header">Studio</span>
         </a>
         <nav>
+            <button type="button" class="menu-button " data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__icon-cross" href="./images/icons-defs.svg#icon-cross"></use>
+                    <use class="menu-button__icon-menu" href="./images/icons-defs.svg#icon-menu-mob"></use>
+                </svg>
+            </button>
+            <div class="menu-container" data-menu></div>
             <ul class="site-nav list">
                 <li class="site-nav__item"><a class="site-nav__link  site-nav__link--current link" href="">Студия</a> </li>
                 <li class="site-nav__item"><a class="site-nav__link link" href="./portfolio.html">Портфолио</a> </li>
@@ -445,6 +452,7 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
 
