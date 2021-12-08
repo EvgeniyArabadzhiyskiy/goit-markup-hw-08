@@ -9,30 +9,48 @@
 
 
 .overlay{
-  
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #2F303A;
+max-width: 480px;
+height: 400px;
+margin-left: auto;
+margin-right: auto;
+background-color: #2F303A;
+background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero480.jpg);
+   
 
-
-  @media screen and(max-width:767px){
-    max-width: 480px;
-    height: 400px;
-    background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/overlay480.jpg);
-    
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero480@2x.jpg);
+      background-size: 480px 400px;
   }
+    
+  
 
   @media screen and(min-width:768px){
-    max-width: 768px;
-    height: 400px;
-    background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero768.jpg);
-    
+  max-width: 768px;
+  height: 400px;
+  background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero768.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero768@2x.jpg);
+        background-size: 768px 400px;
+    }
+  
   }
 
   @media screen and(min-width:1200px){
-    max-width: 1600px;
-    height: 600px;
-    background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/overlay.jpg);
+  max-width: 1600px;
+  height: 600px;
+  background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero1200.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image:linear-gradient(to right , rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)) , url(../images/hero1200@2x.jpg);
+        background-size: 1600px 600px;
+    }
 
   }
 }

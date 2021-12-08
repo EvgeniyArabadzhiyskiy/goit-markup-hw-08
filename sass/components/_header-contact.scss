@@ -51,15 +51,28 @@
 
 .contact-list{
   
+<<<<<<< Updated upstream
   margin-left: auto;
 
+=======
+  @media screen and(max-width:767px){
+    display: flex;
+    flex-direction: column;
+    margin-top: 306px;
+    
+>>>>>>> Stashed changes
 
   @media screen and(max-width:767px){
     display: none;
   }
 
   @media screen and (min-width:768px) and (max-width:1199px){
+<<<<<<< Updated upstream
     padding: 21px 0;
+=======
+    padding: 17px 0;
+    margin-left: 84px;
+>>>>>>> Stashed changes
   }
 
    @media screen and(min-width:1200px){
@@ -69,14 +82,29 @@
 }
 
 .contact-list__item{
+<<<<<<< Updated upstream
+=======
+  @media screen and(max-width:767px){
+    margin-top: 0px;
+    
+  }
+>>>>>>> Stashed changes
 
   @media screen and(min-width:1200px){
     margin-left: 30px;
   }
   
-
-
   &:first-child{
+<<<<<<< Updated upstream
+=======
+
+    @media screen and(max-width:767px){
+      margin-top: 32px;
+      order: 1;
+      
+    }
+
+>>>>>>> Stashed changes
     @media screen and (min-width:768px) and (max-width:1199px){
       margin-bottom: 10px;
     }
@@ -88,14 +116,24 @@
 }
 
 .contact-list__link {
-  display: block;
+  display: inline-block;
   color: $secondary-text-color;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+<<<<<<< Updated upstream
  
+=======
+  @media screen and(max-width:767px){
+    font-size: 24px;
+     
+    &:hover{
+      color: $accent-color;
+    }
+  }
+>>>>>>> Stashed changes
 
   @media screen and (min-width:768px) and (max-width:1199px){
     font-size: 12px;
@@ -111,12 +149,20 @@
     &:hover,
     &:focus{
       color: $accent-color;
+<<<<<<< Updated upstream
+=======
+      
+>>>>>>> Stashed changes
     }
 }
 
 .contact-list__wrapper{
   display: flex;
   align-items: center;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 .contact-list__icon{
@@ -125,8 +171,12 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
+<<<<<<< Updated upstream
     .contact-list__link:hover & , 
     .contact-list__link:focus &{
       fill: $icon-color-client-hover;
     }
 }
+=======
+}
+>>>>>>> Stashed changes
